@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E8DAC9; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container_venue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFFFFF; 
+    border: 1px solid #ABA39B;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+}
+
+.venue-info {
+    text-align: left;
+    width: 100%;
+}
+
+.venue-info h1 {
+    font-size: 3em;
+    color: #193F6B; 
+    margin-bottom: 10px;
+}
+
+.venue-info p {
+    font-size: 1.2em;
+    color: #545358; 
+    line-height: 1.5;
+}
+
+.venue-info i {
+    color: #193F6B; 
+    margin-right: 8px;
+    font-size: 1.7em; 
+}
+
+.map {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .container_venue {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .venue-info, .map {
+        width: 48%;
+    }
+
+    .map iframe {
+        height: 450px;
+    }
+}
